@@ -1,1 +1,175 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastian Gruber Art | 3D Surrealismus & Relief</title>
+    <meta name="description" content="Sebastian Gruber - Reliefacryl und 3D Surrealismus aus Germering. Feinwerktechnik trifft Kunst.">
+    <style>
+        /* --- ORANGATANG & TRANCE PALETTE --- */
+        :root {
+            --bg-color: #0a0a0a; /* Deep Trance Dark */
+            --primary-orange: #ff7b00; /* Stimulus Orange */
+            --accent-purple: #6a0dad; /* Core Purple */
+            --highlight-yellow: #eaff00; /* Neon Yellow */
+            --glass: rgba(255, 255, 255, 0.05);
+            --text-main: #ffffff;
+        }
 
+        body {
+            font-family: 'Courier New', monospace; /* Tech/Mechanic Vibe */
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* --- GRADIENT BACKGROUND (90s Style) --- */
+        .background-glow {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle at 50% 50%, #2a0033 0%, #000000 80%);
+            z-index: -1;
+        }
+
+        /* --- TYPOGRAPHY --- */
+        h1, h2, h3 {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 0 0 10px var(--primary-orange);
+        }
+
+        /* --- CONTAINER --- */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* --- PROFILE SECTION --- */
+        .profile {
+            margin-top: 40px;
+            padding: 30px;
+            background: var(--glass);
+            border: 1px solid var(--accent-purple);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 20px rgba(106, 13, 173, 0.4);
+        }
+
+        .bio-text {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #ddd;
+            margin-top: 15px;
+        }
+
+        .tagline {
+            color: var(--highlight-yellow);
+            font-weight: bold;
+        }
+
+        /* --- GALLERY (Bento Grid Trend) --- */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .art-piece {
+            position: relative;
+            height: 300px;
+            background-color: #222; /* Placeholder color */
+            border-radius: 10px;
+            overflow: hidden;
+            border: 2px solid var(--primary-orange);
+            transition: transform 0.3s ease;
+        }
+
+        .art-piece img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .art-piece:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 25px var(--primary-orange);
+        }
+
+        /* --- SOCIAL LINKS (Neon Buttons) --- */
+        .links {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 15px;
+            text-decoration: none;
+            color: var(--bg-color);
+            background: linear-gradient(90deg, var(--primary-orange), var(--highlight-yellow));
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 50px;
+            letter-spacing: 2px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            filter: brightness(1.2);
+            box-shadow: 0 0 15px var(--highlight-yellow);
+        }
+
+        footer {
+            margin-top: 60px;
+            font-size: 0.7rem;
+            color: #555;
+            padding-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="background-glow"></div>
+
+    <div class="container">
+        <header>
+            <h1 style="font-size: 2.5rem; margin-bottom: 5px;">Sebastian Gruber</h1>
+            <h3 style="color: var(--primary-orange);">Art & Engineering</h3>
+        </header>
+
+        <section class="profile">
+            <p class="tagline">/// RELIEFACRYL /// 3D SURREALISMUS ///</p>
+            <p class="bio-text">
+                Präzision trifft Abstraktion. <br>
+                Feinwerkmechaniker & Ex-Zahnmediziner (LMU). <br>
+                Longboarder aus Leidenschaft.
+            </p>
+        </section>
+
+        <section class="gallery">
+            <div class="art-piece"><img src="IMG20260128213222.jpg" alt="Relief Kunstwerk 1"></div>
+            <div class="art-piece"><img src="IMG20260128155217.jpg" alt="Urban Art Longboard"></div>
+            <div class="art-piece"><img src="IMG20260130044239.jpg" alt="Struktur Acryl"></div>
+            <div class="art-piece"><img src="IMG20260128212952.jpg" alt="Surrealismus Meer"></div>
+        </section>
+
+        <section class="links">
+            <a href="https://instagram.com/sebastiangruberart" class="btn">Instagram: Art</a>
+            <a href="https://instagram.com/roll_runde" class="btn">Instagram: Roll Runde</a>
+            <a href="mailto:sebastiangruber1203@gmail.com" class="btn">Email Me</a>
+        </section>
+
+        <footer>
+            &copy; 2026 Sebastian Gruber | Germering, Bavaria
+        </footer>
+    </div>
+
+</body>
+</html>
